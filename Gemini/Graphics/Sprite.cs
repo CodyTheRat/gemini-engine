@@ -15,8 +15,8 @@ namespace Gemini.Graphics
     public class Sprite : Image
     {
         #region Fields
-        protected string currentAnimation = "default";
-        protected Dictionary<string, SpriteAnimation> animations = new Dictionary<string, SpriteAnimation>();
+        private string currentAnimation = "default";
+        private Dictionary<string, SpriteAnimation> animations = new Dictionary<string, SpriteAnimation>();
         #endregion
 
         #region Properties
