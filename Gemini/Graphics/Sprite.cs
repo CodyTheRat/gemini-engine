@@ -42,6 +42,7 @@ namespace Gemini.Graphics
         public Dictionary<string, SpriteAnimation> Animations
         {
             get { return animations; }
+            protected set { animations = value; }
         }
         #endregion
 

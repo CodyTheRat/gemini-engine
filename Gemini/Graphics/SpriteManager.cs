@@ -21,11 +21,14 @@ namespace Gemini.Graphics
     {
         private SpriteCollection spriteCollection;
         private SpriteBatch spriteBatch;
+        private GameConfig config;
 
-        public SpriteManager(Game game)
+        public SpriteManager(Game game, ref GameConfig config)
             : base(game)
         {
-            // TODO: Construct any child components here
+            this.config = config;
+
+            this.spriteCollection = new SpriteCollection();
         }
 
         public string Name
@@ -44,6 +47,7 @@ namespace Gemini.Graphics
         /// </summary>
         public override void Initialize()
         {
+            config.Machines[GameConfig.MachineType.Sprite] = this;
             spriteBatch = new SpriteBatch(Game.GraphicsDevice);
 
             base.Initialize();

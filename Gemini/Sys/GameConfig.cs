@@ -23,6 +23,7 @@ namespace Gemini.Sys
     {
         public enum MachineType
         {
+            Sprite,
             State,
             Physics
         }

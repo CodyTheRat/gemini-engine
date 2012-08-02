@@ -102,6 +102,8 @@
     <Compile Include="Physics\Collisions\CollisionRay.cs" />
     <Compile Include="Physics\Collisions\ICollisionBounds.cs" />
     <Compile Include="Physics\IPhysicsObject.cs" />
+    <Compile Include="Physics\PhysicsManager.cs" />
+    <Compile Include="Physics\PhysicsObjectCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sys\GameConfig.cs" />
     <Compile Include="Sys\IGeminiMachine.cs" />
