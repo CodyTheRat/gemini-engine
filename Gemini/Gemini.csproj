@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Graphics\Image.cs" />
+    <Compile Include="Graphics\Isometric.cs" />
     <Compile Include="Graphics\Sprite.cs" />
     <Compile Include="Graphics\SpriteAnimation.cs" />
     <Compile Include="Graphics\SpriteCollection.cs" />

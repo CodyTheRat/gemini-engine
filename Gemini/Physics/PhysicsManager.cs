@@ -42,11 +42,23 @@ namespace Gemini.Physics
         }
 
         /// <summary>
+        /// Adds a physics object to manage.
+        /// </summary>
+        /// <param name="obj"></param>
+        public void AddObject(IPhysicsObject obj)
+        {
+            obj.Manager = this;
+            objects.Add(obj);
+        }
+
+
+        /// <summary>
         /// Allows the game component to update itself.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         public override void Update(GameTime gameTime)
         {
+            objects.SimulateAll(gameTime);
             objects.UpdateAll(gameTime);
 
             base.Update(gameTime);
